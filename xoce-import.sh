@@ -49,7 +49,7 @@ uuid=$(xe vm-import url="$XOCE_URL" 2> /dev/null)
 import=$?
 if [ $import -ne 0 ]
 then
-  uuid=$(curl "$XOCE_URL" | xe vm-import filename=/dev/stdin 2>&1)
+  uuid=$(curl "$XOCE_URL" -c -| xe vm-import filename=/dev/stdin 2>&1)
 fi
 
 # If it fails again (for any reason), we stop the script

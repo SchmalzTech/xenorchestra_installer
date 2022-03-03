@@ -10,8 +10,8 @@ if [ "$totalk" -lt "3000000" ]; then echo "XOCE Requires at least 3GB Memory!"; 
 distro=$(/usr/bin/lsb_release -is)
 if [ "$distro" = "Ubuntu" ]; then /usr/bin/add-apt-repository multiverse; fi
 
-xo_branch="master"
-xo_server="https://github.com/vatesfr/xen-orchestra"
+xo_branch="ps-whitelabel"
+xo_server="https://github.com/SchmalzTech/xen-orchestra"
 n_repo="https://raw.githubusercontent.com/tj/n/master/bin/n"
 yarn_repo="deb https://dl.yarnpkg.com/debian/ stable main"
 yarn_gpg="https://dl.yarnpkg.com/debian/pubkey.gpg"
